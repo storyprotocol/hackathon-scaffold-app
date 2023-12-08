@@ -2,35 +2,40 @@ import { useCallback, useState } from "react";
 import { useWaitForTransaction } from "wagmi";
 import {
   Client,
-  CreateIPOrgRequest,
-  CreateIPOrgResponse,
+  RegisterRelationshipTypeResponse,
+  RegisterRelationshipTypeRequest,
 } from "@story-protocol/core-sdk";
 import { useStoryClient } from "./useStoryClient";
 
-export default function useCreateIpOrg(createReq: CreateIPOrgRequest) {
+export default function useRegisterRelationshipType(
+  registerTypeReq: RegisterRelationshipTypeRequest
+) {
   const { client } = useStoryClient();
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [data, setData] = useState<CreateIPOrgResponse>({
+  const [data, setData] = useState<RegisterRelationshipTypeResponse>({
     txHash: "",
-    ipOrgId: undefined,
+    success: undefined,
+    relationshipId: undefined,
   });
   const [isError, setIsError] = useState<boolean>(false);
 
   const execute = useCallback(async () => {
     try {
       setIsLoading(true);
-      const data: CreateIPOrgResponse = await (client as Client).ipOrg.create(
-        createReq
-      );
+      const data: RegisterRelationshipTypeResponse = await (
+        client as Client
+      ).relationshipType.register(registerTypeReq);
+
+      console.log("HELLO", { data });
       setData(data);
       setIsLoading(false);
     } catch (e: unknown) {
+      console.log("ERROR", { e });
       setIsLoading(false);
       setIsError(true);
-      throw Error("failed to create ip org");
     }
-  }, [client, createReq]);
+  }, [client, registerTypeReq]);
 
   return {
     execute,

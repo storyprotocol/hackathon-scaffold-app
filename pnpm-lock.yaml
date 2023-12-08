@@ -8,6 +8,9 @@ dependencies:
   '@story-protocol/core-sdk':
     specifier: 0.1.0-alpha-rc.6
     version: 0.1.0-alpha-rc.6(typescript@5.3.3)
+  '@uiw/react-json-view':
+    specifier: 2.0.0-alpha.10
+    version: 2.0.0-alpha.10(@babel/runtime@7.23.5)(react-dom@18.2.0)(react@18.2.0)
   connectkit:
     specifier: ^1.5.3
     version: 1.5.3(@babel/core@7.23.5)(react-dom@18.2.0)(react-is@16.13.1)(react@18.2.0)(viem@1.19.11)(wagmi@1.4.10)
@@ -1165,6 +1168,18 @@ packages:
       '@typescript-eslint/types': 6.13.2
       eslint-visitor-keys: 3.4.3
     dev: true
+
+  /@uiw/react-json-view@2.0.0-alpha.10(@babel/runtime@7.23.5)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-0L5Hbt4r0pBEZwAATTu3g1S8Gld8bt64ZHlCU8M6KGnNwbDlKE8mNF8R0r8qUCUGBHY/Lv6wqkIquWScW2RDMA==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@uiw/react-json-view/-/react-json-view-2.0.0-alpha.10.tgz}
+    peerDependencies:
+      '@babel/runtime': '>=7.10.0'
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
+    dependencies:
+      '@babel/runtime': 7.23.5
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
 
   /@ungap/structured-clone@1.2.0:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@ungap/structured-clone/-/structured-clone-1.2.0.tgz}
