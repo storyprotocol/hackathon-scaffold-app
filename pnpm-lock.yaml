@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@story-protocol/core-sdk':
-    specifier: 0.1.0-alpha-rc.6
-    version: 0.1.0-alpha-rc.6(typescript@5.3.3)
+    specifier: 0.1.0-alpha
+    version: 0.1.0-alpha(typescript@5.3.3)
   '@uiw/react-json-view':
     specifier: 2.0.0-alpha.10
     version: 2.0.0-alpha.10(@babel/runtime@7.23.5)(react-dom@18.2.0)(react@18.2.0)
@@ -984,8 +984,8 @@ packages:
       '@stablelib/wipe': 1.0.1
     dev: false
 
-  /@story-protocol/core-sdk@0.1.0-alpha-rc.6(typescript@5.3.3):
-    resolution: {integrity: sha512-Tu77mvgXIgN3sHrLpEc14OYmTwxANe5rnOrFhaMeM1M3o1v3HEIZZMKkGh6uwNDJJzXdPSMYTSWnh90kqUsh5w==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@story-protocol/core-sdk/-/core-sdk-0.1.0-alpha-rc.6.tgz}
+  /@story-protocol/core-sdk@0.1.0-alpha(typescript@5.3.3):
+    resolution: {integrity: sha512-lYL8jgHYzfxHkZ9iAnd45+WLUIelLtQzKf741GQnUcUmqCt8t+zM4GEW759h8WWpDMStUOtM0gYAGLtfXmAB5A==, tarball: https://packages.atlassian.com/api/npm/npm-remote/@story-protocol/core-sdk/-/core-sdk-0.1.0-alpha.tgz}
     dependencies:
       abitype: 0.10.3(typescript@5.3.3)
       axios: 1.6.2

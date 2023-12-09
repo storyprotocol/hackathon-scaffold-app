@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@story-protocol/core-sdk": "0.1.0-alpha-rc.6",
+    "@story-protocol/core-sdk": "0.1.0-alpha",
     "@uiw/react-json-view": "2.0.0-alpha.10",
     "connectkit": "^1.5.3",
     "next": "14.0.4",
